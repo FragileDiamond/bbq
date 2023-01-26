@@ -1,0 +1,192 @@
+ru:
+  activerecord:
+    models:
+      user: 'Пользователь'
+      event: 'Событие'
+      comment: 'Комментарий'
+      subscription: 'Подписка'
+      photo: 'Фотография'
+
+    attributes:
+      user:
+        email: 'Email'
+        name: 'Имя'
+        avatar: 'Аватарка'
+        password: 'Пароль'
+        password_confirmation: 'Подтверждение пароля'
+      event:
+        title: 'Название'
+        address: 'Место проведения'
+        datetime: 'Дата и время'
+        description: 'Описание'
+        pincode: 'Пин-код доступа'
+      comment:
+        user_name: 'Ваше имя'
+        body: 'Комментарий'
+      subscription:
+        user_name: 'Ваше имя'
+        user_email: 'Ваш email'
+      photo:
+        photo: 'Фотография'
+
+  controllers:
+    events:
+      created: 'Вы создали новое мероприятие'
+      updated: 'Вы обновили мероприятие'
+      destroyed: 'Вы удалили мероприятие :('
+      wrong_pincode: 'Неверный пин-код!'
+    users:
+      updated: 'Вы обновили свой профиль'
+    comments:
+      destroyed: 'Комментарий удален'
+      created: 'Ваш комментарий добавлен'
+      error: 'Ошибка с комментарием'
+    subscriptions:
+      created: 'Вы подписаны на это событие'
+      destroyed: 'Участник отписан'
+      error: 'Подписка/отписка не сработала'
+    photos:
+      error: 'Что-то не так с фоткой'
+      created: 'Вы добавили фотографию к событию'
+      destroyed: 'Вы удалили фотку'
+
+  app:
+    name: 'Шашлыки'
+    company: 'Хороший программист'
+
+  comments:
+    comment:
+      destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
+
+  subscriptions:
+    subscription:
+      destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+      ubsub_confirm: 'Вы уверены, что хотите отписаться?'
+      ubsub: 'Отписаться'
+
+  photos:
+    photo:
+      destroy_confirm: 'Вы уверены, что хотите удалить фото?'
+
+  events:
+    event:
+      destroy_confirm: 'Вы уверены, что хотите удалить это событие?'
+      pincode: 'Пин-код'
+
+  user_mailer:
+    registration:
+      title: 'Вы успешно зарегистрировались!'
+      subject: "Добро пожаловать на шашлыки!"
+      name: 'Имя'
+      email: 'Email'
+
+  event_mailer:
+    comment:
+      name: 'Имя'
+      email: 'Email'
+      subject: "Новая комментарий @ %{event}"
+      title: 'Новый комментарий'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
+    subscription:
+      subject: "Новая подписка на %{event}"
+      title: 'Новая подписка'
+      name: 'Имя'
+      email: 'Email'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
+    photo:
+      subject: "Новая фотография @ %{event}"
+      title: 'Новая фотография'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
+      errors:
+        empty: 'Файл пустой'
+        wrong_format: 'Неправильный формат файла (доступны: jpeg jpg png)'
+
+  buttons:
+    forgot_your_password?: 'Забыли пароль?'
+    log_in: 'Войти'
+    log_out: 'Выйти'
+    profile: 'Профиль'
+    sign_up: 'Зарегистрироваться'
+    send_me_reset_password_instructions: 'Отправить инструкции по смене пароля'
+    change_password: 'Сменить пароль'
+    cancel_account: 'Удалить аккаунт'
+    update: 'Обновить'
+    back: 'Назад'
+    edit: 'Изменить'
+    create_event: 'Создать событие'
+    to_main: 'На главную'
+    send: 'Отправить'
+    save: 'Сохранить'
+    edit_profile: 'Редактировать профиль!'
+    delete_event: 'Удалить событие'
+    upload: 'Загрузить'
+    subscribe: 'Подписаться'
+    didnot_receive_confirmation_instructions?: 'Не получили инструкции по подтверждению?'
+    didnot_receive_unlock_instructions?: 'Не получили инструкции по разблокировке?'
+    sign_in_with: 'Войти с помощью'
+    delete: 'Удалить'
+
+  devise:
+    new_password: 'Новый пароль'
+    confirm_new_password: 'Подтвердите новый пароль'
+    placeholder:
+      email: 'name@example.com'
+      password: 'Пароль'
+
+
+  title:
+    form:
+      log_in: 'Вход'
+      sign_up: 'Регистрация'
+      change_password: 'Сменить пароль'
+      forgot_password: 'Забыли пароль?'
+      edit_profile: 'Редактировать профиль'
+      cancel_account: 'Удаление аккаунта'
+    event:
+      edit: 'Редактирование события'
+      events: 'События'
+      new: 'Новое событие'
+      pincode: 'Доступ только по пинкоду'
+    user:
+      edit: 'Редактирование профиля'
+      new: 'Новый пользователь'
+
+  form_text:
+    password_validation: 'символов минимум'
+    leave_blank: 'Если не хотите менять пароль, оставьте поле пустым'
+    unhappy?: 'Что-то не так?'
+
+  error:
+    one: '%{count} ошибки'
+    few: '%{count} ошибок'
+    many: '%{count} ошибок'
+    saving_failed_due_to: 'Сохранение не удалось из-за'
+    subscriptions:
+      own_event: 'Нельзя подписаться на собственное событие'
+      email_already_exist: 'уже используется'
+
+  show:
+    event:
+      will_go: 'Пойдут'
+      calling: 'Зовёт'
+      i_will_go: 'Я пойду'
+    user:
+      organized: 'Организовал'
+      user_has_not_organized_any_events: 'Пользователь пока не организовал ни одного события'
+
+  words:
+    or: 'или'
+    added: 'Добавил'
+    link: 'Ссылка на сайт'
+    are_you_sure: 'Вы уверены?'
+  pundit:
+    not_authorized: 'Вам сюда нельзя!'

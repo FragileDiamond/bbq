@@ -2,8 +2,10 @@
 
 <% if errors.any? %>
   <div class="alert alert-danger">
+    <button class="btn-close" data-dismiss="alert" >X</button>
     <div class="lead buffer-bottom">
-      В вашей форме <%= errors.count %> ошибок
+      <%= I18n.t('error.saving_failed_due_to') %>
+      <%= I18n.t :error, count: errors.count %>
     </div>
 
     <ul>
