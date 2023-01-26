@@ -64,10 +64,6 @@ ru:
       ubsub_confirm: 'Вы уверены, что хотите отписаться?'
       ubsub: 'Отписаться'
 
-  photos:
-    photo:
-      destroy_confirm: 'Вы уверены, что хотите удалить фото?'
-
   events:
     event:
       destroy_confirm: 'Вы уверены, что хотите удалить это событие?'
