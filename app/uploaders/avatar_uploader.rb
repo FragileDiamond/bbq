@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AvatarUploader < CarrierWave::Uploader::Base
   include CarrierWave::RMagick
 
@@ -6,7 +8,6 @@ class AvatarUploader < CarrierWave::Uploader::Base
   else
     storage :file
   end
-
 
   storage :file
 
@@ -17,10 +18,10 @@ class AvatarUploader < CarrierWave::Uploader::Base
   process resize_to_fill: [400, 400]
 
   version :thumb do
-    process :resize_to_fit => [100, 100]
+    process resize_to_fit: [100, 100]
   end
 
   def extension_white_list
-    %w(jpg jpeg gif png)
+    %w[jpg jpeg gif png]
   end
 end

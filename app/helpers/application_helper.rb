@@ -19,7 +19,6 @@ module ApplicationHelper
     end
   end
 
-  # Возвращает миниатюрную версию фотки
   def event_thumb(event)
     photos = event.photos.persisted
 
